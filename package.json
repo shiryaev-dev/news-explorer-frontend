@@ -1,0 +1,37 @@
+{
+  "name": "news-explorer-frontend",
+  "version": "1.0.0",
+  "description": "Поиск новостей, дипломная работа Яндекс.Практикум",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slam235/news-explorer-frontend.git"
+  },
+  "author": "Alexey Shiryaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slam235/news-explorer-frontend/issues"
+  },
+  "homepage": "https://github.com/slam235/news-explorer-frontend#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.4.1"
+  }
+}
