@@ -1,0 +1,11 @@
+.header__search-button {
+    /*width: 168px;
+    box-sizing: border-box;*/
+    padding: 21px 54px;
+}
+ 
+@media screen and (max-width: 768px) {
+    .header__search-button {
+        padding: 16px 50px;
+    }
+}

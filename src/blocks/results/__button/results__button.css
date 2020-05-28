@@ -1,0 +1,27 @@
+.results__button {
+    display: block;
+    background-color: #fff;
+    border-radius: 80px;
+    margin: 64px auto 80px;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    color: #1a1b22;
+    outline: none;
+    cursor: pointer;
+    width: 288px;
+    height: 64px;
+}
+
+.results__button:hover {
+    opacity: 0.9;
+  }
+  
+  .results__button:active {
+    opacity: 0.9;
+  }
+  
+  .results__button:focus {
+    box-shadow: 0 0 5px #b2b2b2;
+  }

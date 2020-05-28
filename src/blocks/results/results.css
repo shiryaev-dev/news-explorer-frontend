@@ -1,0 +1,10 @@
+@import url('./__title/results__title.css');
+@import url('./__container/results__container.css');
+@import url('./__button/results__button.css');
+.results {
+    background: #F5F6F7;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    
+}

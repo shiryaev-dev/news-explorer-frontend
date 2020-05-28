@@ -1,0 +1,8 @@
+@import url('../../blocks/root/root.css');
+@import url('../../blocks/header/header.css');
+@import url('../../vendor/normalize.css');
+@import url('../../vendor/fonts.css');
+@import url('../../blocks/header-save/header-save.css');
+@import url('../../blocks/saved-results/saved-results.css');
+@import url('../../blocks/news-card/news-card.css');
+@import url('../../blocks/footer/footer.css');

@@ -1,0 +1,18 @@
+/*.header__container {
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 -1px 0 #d1d2d6;
+}
+
+@media screen and (max-width: 767px) {
+    .header__container {
+        height: 66px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .header__container {
+        height: 56px;
+    }
+}*/

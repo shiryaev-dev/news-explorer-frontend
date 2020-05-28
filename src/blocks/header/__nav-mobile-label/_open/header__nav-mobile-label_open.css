@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+.header__nav-mobile-label_open {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    
+    right: 16px;
+    background: url('../../../../images/open-menu-white.svg');
+}
+.header__nav-mobile-label_dark.header__nav-mobile-label_open {
+    background: url('../../../../images/open-menu-dark.svg');
+}
+}

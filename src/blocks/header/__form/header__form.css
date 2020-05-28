@@ -1,0 +1,15 @@
+.header__form {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    .header__form {
+        flex-direction: column;
+        background-color: transparent;
+    }
+}

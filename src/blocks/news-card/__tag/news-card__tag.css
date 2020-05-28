@@ -1,0 +1,29 @@
+.news-card__tag {
+    position: absolute;
+    padding: 0 12px;
+    height: 40px;
+    background-color: white;
+    top: 24px;
+    left: 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 820px) {
+    .news-card__tag {
+        top: 8px;
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .news-card__tag {
+        top: 16px;
+        left: 16px;
+    }
+}

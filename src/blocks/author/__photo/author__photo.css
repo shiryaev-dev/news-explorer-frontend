@@ -1,0 +1,17 @@
+.author__photo {
+    margin-right: 56px;
+}
+
+@media screen and (max-width: 1024px)  {
+    .author__photo {
+        margin-top: 21px;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 625px)  {
+    .author__photo {
+        margin: 0 auto;
+        
+    }
+}

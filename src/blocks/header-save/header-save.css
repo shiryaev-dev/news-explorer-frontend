@@ -1,0 +1,21 @@
+@import url('./__title/header-save__title.css');
+@import url('./__info/header-save__info.css');
+@import url('./__keywords/header-save__keywords.css');
+@import url('./__word/header-save__word.css');
+
+
+.header-save {
+    padding: 0 104px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-save {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-save {
+        padding: 0 16px;
+    }
+}
