@@ -8,12 +8,12 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: { 
+  entry: {
     main: './src/pages/main-loading-and-no-results/index.js',
-    savednews: './src/pages/saved-news/index.js', 
+    savednews: './src/pages/saved-news/index.js',
     mainresultsnotloggedin: './src/pages/main-results-not-logged-in/index.js',
     mainresultsloggedin: './src/pages/main-results-logged-in/index.js'
-    
+
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -31,7 +31,7 @@ module.exports = {
     {
         test: /\.css$/,
         use:  [
-          isDev ? 'style-loader' : { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../' } }, 'css-loader', 'postcss-loader', 
+          isDev ? 'style-loader' : { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../' } }, 'css-loader', 'postcss-loader',
         ]
     },
     {
@@ -45,14 +45,14 @@ module.exports = {
             {
                 loader: 'image-webpack-loader',
                 options: {
-                    
+
                 }
             }
         ]
     },
     ]
   },
-  plugins: [ 
+  plugins: [
     new MiniCssExtractPlugin({
         filename: '[name]/[name].[contenthash].css'
     }),
@@ -85,8 +85,6 @@ module.exports = {
       canPrint: true
     }),
     new WebpackMd5Hash(),
-    new webpack.DefinePlugin({
-      'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
+
   ]
 };

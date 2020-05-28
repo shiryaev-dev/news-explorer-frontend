@@ -45,4 +45,9 @@
     
     npm run build
 
-
+Страницы на gh-pages:
+---
+* Главная страница, пользователь не авторизован, секция в процессе поиска и секция не найдено https://slam235.github.io/news-explorer-frontend/
+* Главная страница, пользователь авторизован, результаты поиска https://slam235.github.io/news-explorer-frontend/mainresultsloggedin/
+* Главная страница, пользователь не авторизован, результаты поиска https://slam235.github.io/news-explorer-frontend/mainresultsnotloggedin/
+* Страница сохраненных статей https://slam235.github.io/news-explorer-frontend/savednews/
