@@ -16,7 +16,7 @@ import NewsCounter from '../../js/components/NewsCounter';
 const mainApi = new MainApi(MAIN_API_OPTIONS);
 const header = new Header(HEADER);
 const auth = new Auth();
-
+const newsCounter = new NewsCounter(NEWS_COUNTER);
 
 if (auth.isLoggedIn()) {
   header.setLogin(localStorage.getItem('name'));
@@ -24,7 +24,6 @@ if (auth.isLoggedIn()) {
   header.setUnauthorized();
   window.location.pathname = '/';
 }
-const newsCounter = new NewsCounter(NEWS_COUNTER);
+
 new Exit(EXIT, header, auth, mainApi);
-const cardListAccount = new NewsCardListAccount(NEWS_CARD_LIST_ACCOUNT, mainApi, newsCounter);
-cardListAccount.getNews();
+new NewsCardListAccount(NEWS_CARD_LIST_ACCOUNT, mainApi, newsCounter);
