@@ -91,6 +91,7 @@ export default class Search {
         this.formValidate.enableFormFields(this.inputSearch, this.searchButton);
         this._offResults();
         this._onErrorServer();
+        this._offSearch();
       });
   }
 
