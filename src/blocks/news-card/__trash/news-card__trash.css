@@ -12,6 +12,7 @@
     background-position: 50%;
     cursor: pointer;
     outline: none;
+    z-index: 1000000;
 }
 .news-card__trash:hover {
     background-image: url(../../../images/trash-hover.svg);

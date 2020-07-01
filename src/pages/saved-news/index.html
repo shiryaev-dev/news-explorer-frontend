@@ -14,132 +14,39 @@
     <div class="root">
         <header class="header header_saved">
           <div class="header__container">
-           <div class="header__nav-container header__nav-container_dark">
-               <a href="../index.html" class="header__logo header__logo_dark">NewsExplorer</a>
-               <input class="header__nav-mobile" id="header__nav-mobile" type="checkbox">
-               <label class="header__nav-mobile-label header__nav-mobile-label_open header__nav-mobile-label_dark" for="header__nav-mobile"></label>
-               <nav class="header__nav">
-                   <ul class="header__nav-items">
-                       <li class="header__nav-item-logo"><a href="../index.html" class="header__nav-item-logo-link">NewsExplorer</a></li>
-                       <li class="header__nav-item header__nav-item_dark">
-                           <a href="../index.html" class="header__nav-item-link">Главная</a>
-                       </li>
-                       <li class="header__nav-item header__nav-item_dark header__nav-item_active">
-                            <a href="./index.html" class="header__nav-item-link">Сохранённые статьи</a>
-                       </li>
-                       <li class="header__nav-item header__nav-item_dark">
-                            <button class="header__nav-item-button header__nav-item-button_dark">Алексей <img src="../<%=require('../../images/logout-black.svg').default%>" class="header__nav-item-icon" alt="logout"></button>
-                       </li>
-                   </ul>
-                   <label class="header__nav-mobile-label header__nav-mobile-label_close" for="header__nav-mobile"></label>
-               </nav>
-           </div>
+            <div class="header__nav-container header__nav-container_dark">
+              <a href="../index.html" class="header__logo header__logo_dark">NewsExplorer</a>
+              <input class="header__nav-mobile" id="header__nav-mobile" type="checkbox">
+              <label class="header__nav-mobile-label header__nav-mobile-label_open header__nav-mobile-label_dark" for="header__nav-mobile"></label>
+              <nav class="header__nav">
+                  <ul class="header__nav-items">
+                      <li class="header__nav-item-logo"><a href="../index.html" class="header__nav-item-logo-link">NewsExplorer</a></li>
+                      <li class="header__nav-item header__nav-item_dark">
+                          <a href="../index.html" class="header__nav-item-link">Главная</a>
+                      </li>
+                      <li class="header__nav-item header__nav-item_dark header__nav-item_saved header__nav-item_active">
+                           <a href="./index.html" class="header__nav-item-link">Сохранённые статьи</a>
+                      </li>
+                      <li class="header__nav-item header__nav-item_dark">
+                           <button class="header__nav-item-button header__nav-item-button_in header__nav-item-button_dark">
+                             <span class="header__nav-item-button_user"></span>
+                             <i class="header__nav-item-icon"></i>
+                            </button>
+                           <button class="header__nav-item-button header__nav-item-button_auth">Авторизоваться</button>
+                      </li>
+                  </ul>
+                  <label class="header__nav-mobile-label header__nav-mobile-label_close" for="header__nav-mobile"></label>
+              </nav>
+          </div>
           </div>
           <section class="header-save">
               <h2 class="header-save__title">Сохраненные статьи</h2>
               <p class="header-save__info">Алексей, у вас 5 сохранённых статей</p>
-              <p class="header-save__keywords">По ключевым словам: <span class="header-save__word">Природа, Тайга</span> и <span class="header-save__word">2 другим</span></p>
+              <p class="header-save__keywords">По ключевым словам: <span class="header-save__word">Природа, Тайга и 2 другим</span></p>
           </section>
         </header>
         <section class="saved-results">
-            <div class="saved-results__container">
-                <div class="news-card">
-                    <a class="news-card__link" href="#" target="_blank"></a>
-                    <img class="news-card__image" src="../<%=require('../../images/image_01.png').default%>" alt="picture">
-                      <div class="news-card__trash"></div>
-                      <div class="news-card__tooltip">
-                        <p class="news-card__tooltip-message">Убрать из сохранённых</p>
-                      </div>
-                      <div class="news-card__tag">
-                        <p class="news-card__tooltip-message">Природа</p>
-                      </div>
-                   
-                    <div class="news-card__description">
-                        <p class="news-card__date">2 Августа, 2019</p>
-                        <h3 class="news-card__title">Национальное достояние – парки</h3>
-                        <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                      </div>
-                      <p class="news-card__source">Лента.ру</p>
-                </div>
-                <div class="news-card">
-                        <a class="news-card__link" href="#" target="_blank"></a>
-                        <img class="news-card__image" src="../<%=require('../../images/image_06.png').default%>" alt="picture">
-                          <div class="news-card__trash"></div>
-                          <div class="news-card__tooltip">
-                            <p class="news-card__tooltip-message">Убрать из сохранённых</p>
-                          </div>
-                          <div class="news-card__tag">
-                            <p class="news-card__tooltip-message">Природа</p>
-                          </div>
-                        
-                        <div class="news-card__description">
-                            <p class="news-card__date">2 Августа, 2019</p>
-                            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-                            <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-                            
-                        </div>
-                        <p class="news-card__source">Лента.ру</p>
-                </div>
-                <div class="news-card">
-                    <a class="news-card__link" href="#" target="_blank"></a>
-                    <img class="news-card__image" src="../<%=require('../../images/image_05.png').default%>" alt="picture">
-                      <div class="news-card__trash"></div>
-                      <div class="news-card__tooltip">
-                        <p class="news-card__tooltip-message">Убрать из сохранённых</p>
-                      </div>
-                      <div class="news-card__tag">
-                        <p class="news-card__tooltip-message">Природа</p>
-                      </div>
-                      <div class="news-card__tag">
-                        <p class="news-card__tooltip-message">Природа</p>
-                      </div>
-                   
-                    <div class="news-card__description">
-                        <p class="news-card__date">2 Августа, 2019</p>
-                        <h3 class="news-card__title">Национальное достояние – парки</h3>
-                        <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                      </div>
-                      <p class="news-card__source">Лента.ру</p>
-                </div>
-                <div class="news-card">
-                        <a class="news-card__link" href="#" target="_blank"></a>
-                        <img class="news-card__image" src="../<%=require('../../images/image_01.png').default%>" alt="picture">
-                          <div class="news-card__trash"></div>
-                          <div class="news-card__tooltip">
-                            <p class="news-card__tooltip-message">Убрать из сохранённых</p>
-                          </div>
-                          <div class="news-card__tag">
-                            <p class="news-card__tooltip-message">Природа</p>
-                          </div>
-                       
-                        <div class="news-card__description">
-                            <p class="news-card__date">2 Августа, 2019</p>
-                            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-                            <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-                            
-                        </div>
-                        <p class="news-card__source">Лента.ру</p>
-                </div>
-                <div class="news-card">
-                    <a class="news-card__link" href="#" target="_blank"></a>
-                    <img class="news-card__image" src="../<%=require('../../images/image_06.png').default%>" alt="picture">
-                      <div class="news-card__trash"></div>
-                      <div class="news-card__tooltip">
-                        <p class="news-card__tooltip-message">Убрать из сохранённых</p>
-                      </div>
-                      <div class="news-card__tag">
-                        <p class="news-card__tooltip-message">Природа</p>
-                      </div>
-                    
-                    <div class="news-card__description">
-                        <p class="news-card__date">2 Августа, 2019</p>
-                        <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-                        <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-                        
-                    </div>
-                    <p class="news-card__source">Лента.ру</p>
-                </div>
-            </div>
+            <div class="saved-results__container"></div>
         </section>
         <section class="footer">
             <p class="footer__copy">© 2020 Supersite, Powered by News API</p>
@@ -158,6 +65,72 @@
               </div>
             </nav>
         </section>
+
+        <template id="dark-nav-logged-in">
+          <div class="header__nav-container header__nav-container_dark">
+            <a href="../index.html" class="header__logo header__logo_dark">NewsExplorer</a>
+            <input class="header__nav-mobile" id="header__nav-mobile" type="checkbox">
+            <label class="header__nav-mobile-label header__nav-mobile-label_open header__nav-mobile-label_dark" for="header__nav-mobile"></label>
+            <nav class="header__nav">
+                <ul class="header__nav-items">
+                    <li class="header__nav-item-logo"><a href="../index.html" class="header__nav-item-logo-link">NewsExplorer</a></li>
+                    <li class="header__nav-item header__nav-item_dark">
+                        <a href="../index.html" class="header__nav-item-link">Главная</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item_dark header__nav-item_active">
+                         <a href="./index.html" class="header__nav-item-link">Сохранённые статьи</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item_dark">
+                         <button class="header__nav-item-button header__nav-item-button_in header__nav-item-button_dark"><span class="header__nav-item-name header__nav-item-button_user">курва</span> <img src="../<%=require('../../images/logout-black.svg').default%>" class="header__nav-item-icon" alt="logout"></button>
+                    </li>
+                </ul>
+                <label class="header__nav-mobile-label header__nav-mobile-label_close" for="header__nav-mobile"></label>
+            </nav>
+        </div>
+        </template>
+
+        <template id="dark-nav-not-logged-in">
+          <div class="header__nav-container header__nav-container_dark">
+            <a href="../index.html" class="header__logo header__logo_dark">NewsExplorer</a>
+            <input class="header__nav-mobile" id="header__nav-mobile" type="checkbox">
+            <label class="header__nav-mobile-label header__nav-mobile-label_open header__nav-mobile-label_dark" for="header__nav-mobile"></label>
+            <nav class="header__nav">
+                <ul class="header__nav-items">
+                    <li class="header__nav-item-logo"><a href="../index.html" class="header__nav-item-logo-link">NewsExplorer</a></li>
+                    <li class="header__nav-item header__nav-item_dark">
+                        <a href="../index.html" class="header__nav-item-link">Главная</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item_dark header__nav-item_active">
+                         <a href="./index.html" class="header__nav-item-link">Сохранённые статьи</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item_dark">
+                         <button class="header__nav-item-button header__nav-item-button_dark"><span class="header__nav-item-name"></span> <img src="../<%=require('../../images/logout-black.svg').default%>" class="header__nav-item-icon" alt="logout"></button>
+                    </li>
+                </ul>
+                <label class="header__nav-mobile-label header__nav-mobile-label_close" for="header__nav-mobile"></label>
+            </nav>
+        </div>
+        </template>
+
+        <template id="news-card-saved">
+          <div class="news-card">
+            <a class="news-card__link" href="#" target="_blank"></a>
+            <img class="news-card__image" src="" alt="">
+            <div class="news-card__trash"></div>
+            <div class="news-card__tooltip">
+              <p class="news-card__tooltip-message">Убрать из сохранённых</p>
+            </div>
+            <div class="news-card__tag">
+              <p class="news-card__key-word"></p>
+            </div>
+            <div class="news-card__description">
+                <p class="news-card__date"></p>
+                <h3 class="news-card__title"></h3>
+                <p class="news-card__text"></p>
+            </div>
+            <p class="news-card__source"></p>
+        </div>
+        </template>
     </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.savednews.entry %>"></script>
 </body>

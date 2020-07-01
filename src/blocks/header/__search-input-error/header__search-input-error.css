@@ -1,0 +1,15 @@
+.header__search-input-error {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  margin: 0;
+  display: none;
+
+}
+
+.header__search-input-error_on {
+  display: block;
+}

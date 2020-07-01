@@ -11,6 +11,7 @@
 @import url('./__tag/news-card__tag.css');
 @import url('./__save-icon/_save/news-card__save-icon_save.css');
 @import url('./__link/news-card__link.css');
+@import url('./__key-word/news-card__key-word.css');
 
 .news-card {
   width: 100%;
@@ -30,13 +31,13 @@
 @media screen and (max-width: 820px) {
   .news-card {
     height: 420px;
-    
+
   }
 }
 
 @media screen and (max-width: 536px) {
   .news-card {
     height: 446px;
-  
-  } 
+
+  }
 }

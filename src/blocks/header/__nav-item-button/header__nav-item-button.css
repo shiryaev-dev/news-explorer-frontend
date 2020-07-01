@@ -13,10 +13,15 @@
     background: transparent;
     padding: 15px;
     justify-content: center;
+    align-items: center;
 }
 
 .header__nav-item-button:hover {
     opacity: .8;
+}
+
+.header__nav-item-button_hide {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {

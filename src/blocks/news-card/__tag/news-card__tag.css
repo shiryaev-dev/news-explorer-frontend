@@ -27,3 +27,7 @@
         left: 16px;
     }
 }
+
+.news-card__tag_off {
+  display: none;
+}
