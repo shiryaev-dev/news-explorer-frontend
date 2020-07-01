@@ -1,8 +1,7 @@
-import { getToDate, getFromDate } from '../utils/index';
-
 export default class NewsApi {
-  constructor(options) {
-    this._options = options;
+  constructor(options, dependencies) {
+    this.options = options;
+    this.dependencies = dependencies;
   }
 
   getNews(query) {
@@ -10,7 +9,8 @@ export default class NewsApi {
       apiKey,
       pageSize,
       url,
-    } = this._options;
+    } = this.options;
+    const { getFromDate, getToDate } = this.dependencies;
     const to = getToDate();
     const from = getFromDate();
     return fetch(`${url}q=${query}&from=${from}&to=${to}&pageSize=${pageSize}&apiKey=${apiKey}`)
