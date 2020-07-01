@@ -10,9 +10,10 @@ export default class NewsCardListAccount {
     this.newsCounter = newsCounter;
     this.cards = [];
     this._setEventListeners();
+    this._getNews();
   }
 
-  getNews() {
+  _getNews() {
     this.mainApi.getArticles()
       .then(res => {
         console.log(res);
