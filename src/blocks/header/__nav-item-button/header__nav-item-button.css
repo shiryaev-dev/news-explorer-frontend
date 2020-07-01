@@ -1,0 +1,27 @@
+.header__nav-item-button {
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 15px;
+    justify-content: center;
+}
+
+.header__nav-item-button:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 767px) {
+    .header__nav-item-button {
+        width: 100%;
+    }
+}
+

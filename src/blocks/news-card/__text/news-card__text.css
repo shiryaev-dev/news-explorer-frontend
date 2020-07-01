@@ -1,0 +1,14 @@
+.news-card__text {
+    display: block;
+    margin: 0 0 10px;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1a1b22;
+    max-height: 88px;
+    overflow-y: hidden;
+}
+

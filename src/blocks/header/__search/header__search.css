@@ -1,0 +1,25 @@
+.header__search {
+    max-width: 608px;
+    margin: 80px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .header__search {
+        max-width: 452px;
+        margin: 38px auto 48px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .header__search {
+        
+        margin: 38px 40px 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__search {
+        padding: 30px 16px 32px;
+        margin: 0;
+    }
+}

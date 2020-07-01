@@ -1,0 +1,7 @@
+.news-card__save-icon_save {
+    background-image: url(../../../../images/flag-blue.svg);
+}
+
+.news-card__save-icon_save:hover {
+    background-image: url(../../../../images/flag-blue.svg);
+}

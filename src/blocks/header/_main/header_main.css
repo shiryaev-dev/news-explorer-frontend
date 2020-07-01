@@ -1,0 +1,11 @@
+.header_main {
+    background-image: url('../../../images/background.png');
+    background-size: cover;
+    background-position: 50%;
+}
+
+@media screen and(max-width: 768px) {
+    .header_main {
+        background-image: url('../../../images/background-768.png');
+    }
+}

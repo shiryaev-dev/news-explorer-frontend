@@ -1,0 +1,24 @@
+.header__subtitle {
+    font-family: Roboto;     
+    color: white;
+    width: 545px;
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__subtitle {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__subtitle {
+        margin-bottom: 122px;
+    }
+}

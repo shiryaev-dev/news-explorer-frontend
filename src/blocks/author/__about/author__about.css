@@ -1,0 +1,19 @@
+.author__about {
+  margin-top: 51px;
+  box-sizing: border-box;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .author__about {
+    
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .author__about {
+    
+    margin-top: 24px;
+  }
+}

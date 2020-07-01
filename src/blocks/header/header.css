@@ -1,0 +1,32 @@
+@import url('./__nav-container/header__nav-container.css');
+@import url('./__logo/header__logo.css');
+@import url('./__nav-items/header__nav-items.css');
+@import url('./__nav/header__nav.css');
+@import url('./__nav-item-link/header__nav-item-link.css');
+@import url('./__nav-item-button/header__nav-item-button.css');
+@import url('./__nav-item-icon/header__nav-item-icon.css');
+@import url('./__container/header__container.css');
+@import url('./__nav-item/header__nav-item.css');
+@import url('./__subtitle/header__subtitle.css');
+@import url('./__title/header__title.css');
+@import url('./__search/header__search.css');
+@import url('./__search-button/header__search-button.css');
+@import url('./_main/header_main.css');
+@import url('./_saved/header_saved.css');
+@import url('./__form/header__form.css');
+@import url('./__form-input/header__form-input.css');
+@import url('./__nav-item/_active/header__nav-item_active.css');
+@import url('./__nav-mobile/header__nav-mobile.css');
+@import url('./__nav-mobile-label/header__nav-mobile-label.css');
+@import url('./__nav-mobile-label/_open/header__nav-mobile-label_open.css');
+@import url('./__nav-mobile-label/_close/header__nav-mobile-label_close.css');
+@import url('./__nav-item-logo/header__nav-item-logo.css');
+@import url('./__nav-item-logo-link/header__nav-item-logo-link.css');
+@import url('./__nav-item/_dark/header__nav-item_dark.css');
+@import url('./__nav-item-button/_dark/header__nav-item-button_dark.css');
+@import url('./__nav-container/_dark/header__nav-container_dark.css');
+.header {
+    min-height: 204px;
+    width: 100%;
+    box-sizing: border-box;
+}
