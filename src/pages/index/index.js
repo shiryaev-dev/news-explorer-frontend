@@ -21,8 +21,9 @@ import Exit from '../../js/components/Exit';
 import Search from '../../js/components/Search';
 import NewsCardList from '../../js/components/NewsCardList';
 import FormValidate from '../../js/components/FormValidate';
+import { getToDate, getFromDate } from '../../js/utils/index';
 
-const newsApi = new NewsApi(NEWS_API);
+const newsApi = new NewsApi(NEWS_API, { getToDate, getFromDate });
 const header = new Header(HEADER);
 const auth = new Auth();
 const mainApi = new MainApi(MAIN_API_OPTIONS);
@@ -30,6 +31,7 @@ const formValidate = new FormValidate(ERROR_TEXT);
 const popupReg = new PopupRegistration(REGISTRATION_POPUP, mainApi, formValidate);
 const popupLogin = new PopupLogin(LOGIN_POPUP, mainApi, auth, header, formValidate);
 const popupSuccess = new PopupSuccess(SUCCESS_POPUP, popupLogin);
+const newsCardList = new NewsCardList(NEWS_CARD_LIST, auth, mainApi);
 popupReg.setDependencies({ popupLogin, popupSuccess });
 popupLogin.setDependencies({ popupReg });
 
@@ -39,6 +41,5 @@ if (auth.isLoggedIn()) {
   header.setUnauthorized();
 }
 
-const newsCardList = new NewsCardList(NEWS_CARD_LIST, auth, mainApi);
 new Exit(EXIT, header, auth, mainApi);
 new Search(SEARCH, newsApi, newsCardList, mainApi, formValidate);
