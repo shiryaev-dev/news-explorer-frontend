@@ -19,8 +19,8 @@ const MAIN_API_OPTIONS = {
 
 const NEWS_API = {
   apiKey: '8c1a343df6694b69bbe74298bcea01a3',
-  pageSize: '10',
-  url: 'https://newsapi.org/v2/everything?',
+  pageSize: '100',
+  url: 'https://praktikum.tk/news/v2/everything?',
 };
 
 const REGISTRATION_POPUP = {
