@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
-import BaseComponent from './BaseComponent';
+import Popup from './Popup';
 
-export default class PopupLogin extends BaseComponent {
+export default class PopupLogin extends Popup {
   constructor(args, mainApi, auth, header, formValidate) {
     super();
     const {
@@ -40,29 +40,6 @@ export default class PopupLogin extends BaseComponent {
     this._popupWindowRegistration = popupWindowRegistration;
   }
 
-  open() {
-    this._setEventListeners();
-    this._popupWindow.classList.add('popup_is-opened');
-  }
-
-  close() {
-    this._clearFields();
-    this._removeListener();
-    this._popupWindow.classList.remove('popup_is-opened');
-  }
-
-  _closeEscOrClick(event) {
-    if (event.key === 'Escape' || event.target.classList.contains('popup_is-opened')) {
-      this.close();
-    }
-  }
-
-  _clearFields() {
-    this.arrValidate.forEach(obj => { obj.input.value = ''; obj.error.textContent = ''; });
-    this._errorServer.textContent = '';
-    this._actionButton.classList.add('popup__form-button_disabled');
-  }
-
   setDependencies(dependencies) {
     this.dependencies = dependencies;
   }
@@ -71,10 +48,6 @@ export default class PopupLogin extends BaseComponent {
     const { popupReg } = this.dependencies;
     popupReg.open();
     this.close();
-  }
-
-  _validate() {
-    this.formValidate.setSubmitButtonState(this.arrValidate, this._actionButton);
   }
 
   _enter(event) {
