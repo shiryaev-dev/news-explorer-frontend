@@ -1,5 +1,5 @@
 export default class Search {
-  constructor(args, newsApi, newsCardList, mainApi, formValidate) {
+  constructor(args, newsApi, newsCardList, newsCard, mainApi, formValidate) {
     const {
       form,
       inputSearch,
@@ -24,6 +24,7 @@ export default class Search {
     this.errorInput = errorInput;
     this.newsApi = newsApi;
     this.newsCardList = newsCardList;
+    this.newsCard = newsCard;
     this.mainApi = mainApi;
     this.formValidate = formValidate;
     this.results = [];
@@ -113,6 +114,6 @@ export default class Search {
     this.form.addEventListener('input', this._inputHandler.bind(this));
     this.form.addEventListener('submit', this._search.bind(this));
     this.showMoreButton.addEventListener('click', this._showMore.bind(this));
-    this.resultsContainer.addEventListener('click', event => this.newsCardList.iconHandler(event));
+    this.resultsContainer.addEventListener('click', event => this.newsCard.iconHandler(event));
   }
 }
