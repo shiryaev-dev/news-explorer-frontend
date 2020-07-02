@@ -8,6 +8,7 @@ import {
   SEARCH,
   NEWS_API,
   NEWS_CARD_LIST,
+  NEWS_CARD,
   ERROR_TEXT,
 } from '../../js/constants/config';
 import PopupRegistration from '../../js/components/PopupRegistration';
@@ -22,6 +23,7 @@ import Search from '../../js/components/Search';
 import NewsCardList from '../../js/components/NewsCardList';
 import FormValidate from '../../js/components/FormValidate';
 import { getToDate, getFromDate } from '../../js/utils/index';
+import NewsCard from '../../js/components/NewsCard';
 
 const newsApi = new NewsApi(NEWS_API, { getToDate, getFromDate });
 const header = new Header(HEADER);
@@ -31,7 +33,8 @@ const formValidate = new FormValidate(ERROR_TEXT);
 const popupReg = new PopupRegistration(REGISTRATION_POPUP, mainApi, formValidate);
 const popupLogin = new PopupLogin(LOGIN_POPUP, mainApi, auth, header, formValidate);
 const popupSuccess = new PopupSuccess(SUCCESS_POPUP, popupLogin);
-const newsCardList = new NewsCardList(NEWS_CARD_LIST, auth, mainApi);
+const newsCard = new NewsCard(NEWS_CARD, auth, mainApi);
+const newsCardList = new NewsCardList(NEWS_CARD_LIST, newsCard);
 popupReg.setDependencies({ popupLogin, popupSuccess });
 popupLogin.setDependencies({ popupReg });
 
@@ -42,4 +45,4 @@ if (auth.isLoggedIn()) {
 }
 
 new Exit(EXIT, header, auth, mainApi);
-new Search(SEARCH, newsApi, newsCardList, mainApi, formValidate);
+new Search(SEARCH, newsApi, newsCardList, newsCard, mainApi, formValidate);
