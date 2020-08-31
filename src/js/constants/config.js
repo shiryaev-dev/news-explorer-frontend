@@ -20,7 +20,7 @@ const MAIN_API_OPTIONS = {
 const NEWS_API = {
   apiKey: '8c1a343df6694b69bbe74298bcea01a3',
   pageSize: '100',
-  url: 'https://praktikum.tk/news/v2/everything?',
+  url: 'https://nomoreparties.co/news/v2/top-headlines?',
 };
 
 const REGISTRATION_POPUP = {
