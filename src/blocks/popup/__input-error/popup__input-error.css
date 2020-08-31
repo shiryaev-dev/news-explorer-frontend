@@ -6,9 +6,13 @@
     line-height: 15px;
     color: #FF0000;
     margin: 0;
-    display: none;
+
 }
 
 .popup__input:invalid:not(:placeholder-shown) + .popup__input-error {
     display: block;
+}
+
+.popup__form-error_on {
+  display: block;
 }

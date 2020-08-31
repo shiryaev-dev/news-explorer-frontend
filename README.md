@@ -2,23 +2,14 @@
 
 Описание:
 ---
-Этап 3: инфраструктура и вёрстка
-
-* Выполнена верстка в соответствии с макетом https://bit.ly/2EYiGeF
-* JS не используется
-* Сверстаны 4 страницы, чтобы показать все элементы, присутствующие в макете
-* Для открытия/закрытия попапов в консоли надо ввести:
-    - `document.querySelector('.popup__login').classList.toggle('popup_is-opened')` - попап входа;
-    - `document.querySelector('.popup__registration').classList.toggle('popup_is-opened')` - попап регистрации;
-    - `document.querySelector('.popup__success').classList.toggle('popup_is-opened')` - попап успешной регистрации;
-      
-      Попапы не открываются на странице сохраненные статьи.
+Этап 4: JavaScript-код
 
 Стек:
 ---
 * HTML,CSS
 * Webpack
 * Git
+* JavaScript(ES6)
 
 Сборка и запуск проекта:
 ---
@@ -27,8 +18,8 @@
     
     git clone https://github.com/slam235/news-explorer-frontend.git
     
-    конкретно ветку level-2 
-    git clone --branch=level-2 https://github.com/slam235/news-explorer-frontend.git
+    конкретно ветку level-3 
+    git clone --branch=level-3 https://github.com/slam235/news-explorer-frontend.git
 
 - Установить необходимые пакеты:
     
@@ -47,7 +38,5 @@
 
 Страницы на gh-pages:
 ---
-* Главная страница, пользователь не авторизован, секция в процессе поиска и секция не найдено https://slam235.github.io/news-explorer-frontend/
-* Главная страница, пользователь авторизован, результаты поиска https://slam235.github.io/news-explorer-frontend/mainresultsloggedin/
-* Главная страница, пользователь не авторизован, результаты поиска https://slam235.github.io/news-explorer-frontend/mainresultsnotloggedin/
+* Главная страница https://slam235.github.io/news-explorer-frontend/
 * Страница сохраненных статей https://slam235.github.io/news-explorer-frontend/savednews/

@@ -25,6 +25,7 @@
 @import url('./__nav-item/_dark/header__nav-item_dark.css');
 @import url('./__nav-item-button/_dark/header__nav-item-button_dark.css');
 @import url('./__nav-container/_dark/header__nav-container_dark.css');
+@import url('./__search-input-error/header__search-input-error.css');
 .header {
     min-height: 204px;
     width: 100%;

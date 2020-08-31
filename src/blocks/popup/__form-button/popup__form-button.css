@@ -9,3 +9,9 @@
     color: #B6BCBF;
     box-shadow: none;
 }
+
+.popup__form-button_disabled:hover {
+  background: #E6E8EB;
+  color: #B6BCBF;
+  box-shadow: none;
+}

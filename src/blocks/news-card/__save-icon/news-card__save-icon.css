@@ -12,6 +12,7 @@
     background-position: 50%;
     cursor: pointer;
     outline: none;
+    z-index: 1000001;
 }
 
 .news-card__save-icon:hover {
